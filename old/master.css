@@ -1,0 +1,187 @@
+body{
+   font-family: Cambria;
+   background-color: #271b1f;
+   color: white;
+}
+a{
+   color: inherit;
+}
+
+/* Header Style */
+   header{
+      background-image: url('stain.png');
+      background-color: #461b24;
+
+      display: block;
+      width: 250px;
+
+      line-height: 60px;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 25px;
+
+      margin-top: 25px;
+      border-top: 2px solid white;
+   }
+   header:after{
+      content: ' ';
+      width: 20px;
+      height: 80px;
+      position: relative;
+      bottom: 20px;
+      background-repeat: no-repeat;
+   }
+   header>span{
+      display: inline-block;
+      width: 180px;
+   }
+   header:hover>span{
+      background-image: url('gloss.png');
+      background-position: 0px 8px;
+      background-repeat: no-repeat;
+   }
+
+   /* Header Variations */
+      /* Right-Tailed Header */
+      header.right{
+         border-top-right-radius: 0px;
+      }
+      header.right:after{
+         float: right;
+         background-image: url('tail_right.png');
+      }
+      header.right>span{
+         padding-left: 40px;
+      }
+      /* End of Right-Tailed Header*/
+
+      /* Left-Tailed Header */
+      header.left{
+         border-top-left-radius: 0px;
+      }
+      header.left:after{
+         float: left;
+         background-image: url('tail_left.png');
+      }
+      header.left>span{
+         padding-left: 20px;
+      }
+      /* End of Left-Tailed Header*/
+   /* End of Variations */
+/* End of Header Style*/
+
+/* Blob Style */
+   .blob{
+      display: block;
+      width: 184px;
+      height: 172px;
+      overflow: hidden;
+   }
+   .blob>img{
+      border: 2px solid white;
+      border-radius: 25px;
+
+      width: 180px;
+      height: 140px;
+   }
+
+   .blob>header{
+      position: relative;
+      bottom: 40px;
+   }
+   /* Shrink the header */
+      .blob>header{
+         width: 150px;
+         line-height: 40px;
+         font-size: 16px;
+      }
+      .blob>header:after{
+         width: 20px;
+         height: 60px;
+      }
+      .blob>header>span{
+         width: 100px;
+      }
+      header:hover>span{
+         background-position: -5px bottom;
+         background-size: contain;
+      }
+      .blob>header>span,
+      .blob>header.right>span{
+         padding-left: 10px;
+      }
+      .blob>header.left>span{
+         padding-left: 5px;
+      }
+   /*End of Shrinking */
+/* End of Blob Style */
+
+/* Navigation Style */
+   nav{
+      background-color: #783441;
+      background-image: url('wood.png');
+      background-position: center center;
+      background-repeat: repeat-x;
+
+      width: 80%;
+      line-height: 60px;
+      border-bottom-left-radius:  40px;
+      border-bottom-right-radius: 40px;
+
+      padding: 0px 20px;
+      margin: 10px auto;
+      text-align: center;
+   }
+   nav:before{
+      content: ' ';
+      width: 20px;
+      height: 70px;
+      float: left;
+      position: relative;
+      bottom: 10px;
+      right: 20px;
+
+      background-image: url('nav_tail_left.png');
+      background-position: top right;
+      background-repeat: no-repeat;
+   }
+   nav:after{
+      content: ' ';
+      width: 20px;
+      height: 80px;
+      float: right;
+      position: relative;
+      bottom: 10px;
+      left: 20px;
+
+      background-image: url('nav_tail_right.png');
+      background-position: top left;
+      background-repeat: no-repeat;
+   }
+   nav>*{
+      display: inline-block;
+      margin: 0px 5%;
+   }
+/* End of Navigation Style */
+
+/* Details Style */
+   details{
+      border-top: 3px dashed #524648;
+      display: inline-block;
+
+      width: 250px;
+      padding: 20px;
+
+      line-height: 22px;
+      word-spacing: 5px;
+   }
+   details{
+      background: -moz-radial-gradient(top right, ellipse 100px,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+      background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+      background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+      background: radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+   }
+/* End of Details Style */
